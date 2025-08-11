@@ -1,0 +1,21 @@
+Simple RAG Evaluation Summary
+========================================
+
+Evaluation Date: 20250809_094751
+Total Test Cases: 10
+Successful Retrievals: 10
+Success Rate: 100.00%
+Average Retrieval Time: 1.9299s
+
+Quality Metrics:
+--------------------
+Average Similarity Score: 0.0273
+Average Keyword Overlap: 0.0444
+Average Quality Score: 0.6300
+
+Category Breakdown:
+--------------------
+USAGE: 1/1 (100.0%)
+LEGAL: 1/1 (100.0%)
+FUNCTION: 2/2 (100.0%)
+GENERAL: 6/6 (100.0%)

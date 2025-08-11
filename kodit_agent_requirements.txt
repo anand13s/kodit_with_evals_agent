@@ -1,0 +1,15 @@
+# Requirements for Kodit MCP Agent
+# Install with: pip install -r kodit_agent_requirements.txt
+
+# OpenAI API client for GPT-4o integration
+openai>=1.30.0
+
+# Core Python dependencies (usually included with Python 3.8+)
+asyncio  # For async MCP communication
+json     # For MCP protocol
+argparse # For command line interface
+logging  # For debug and status logging
+
+# Optional: Enhanced terminal experience
+rich>=13.0.0  # For better console output (optional)
+colorama>=0.4.0  # For colored output on Windows (optional) 

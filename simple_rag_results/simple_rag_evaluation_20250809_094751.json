@@ -1,0 +1,140 @@
+{
+  "evaluation_metadata": {
+    "timestamp": "20250809_094751",
+    "total_test_cases": 10,
+    "evaluation_type": "simple_rag_evaluation"
+  },
+  "performance_metrics": {
+    "success_rate": 1.0,
+    "avg_retrieval_time": 1.929909086227417,
+    "successful_retrievals": 10,
+    "total_test_cases": 10
+  },
+  "quality_metrics": {
+    "avg_similarity_score": 0.02727081753345346,
+    "avg_keyword_overlap": 0.044447001736145214,
+    "avg_quality_score": 0.6300000000000001
+  },
+  "detailed_results": [
+    {
+      "question": "How do I run grip from command line on a specific port?",
+      "category": "usage",
+      "difficulty": "medium",
+      "expected_answer": "To run Grip from the command line on a specific port, you can specify the port number as an argument. \n\nHere\u2019s how you do it:\n\n$ grip 80\n * Running on http://localhost:80/\n\nThis command starts the Gri...",
+      "generated_answer": "---\nid: 11\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/templates/limit.html\nlang: Html\ncreated: 2025-08-09T15:15:00.535033\nauthors: \nscores: [0.7182213068008423]\n---\nThis com...",
+      "success": true,
+      "similarity_score": 0.012958963282937365,
+      "keyword_overlap": 0.06779661016949153,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9185340404510498
+    },
+    {
+      "question": "Can I modify and distribute the Grip software, and are there any conditions I need to follow?",
+      "category": "legal",
+      "difficulty": "medium",
+      "expected_answer": "Yes, you are allowed to modify and distribute the Grip software under the terms of its license. The license grants you the rights to use, copy, modify, merge, publish, distribute, sublicense, and sell...",
+      "generated_answer": "---\nid: 11\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/templates/limit.html\nlang: Html\ncreated: 2025-08-09T15:15:00.535033\nauthors: \nscores: [0.7182213068008423]\n---\nThis com...",
+      "success": true,
+      "similarity_score": 0.01782001782001782,
+      "keyword_overlap": 0.04310344827586207,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9144706726074219
+    },
+    {
+      "question": "Where does `wait_for_server` function is defined and what is its purpose?",
+      "category": "function",
+      "difficulty": "medium",
+      "expected_answer": "The `wait_for_server` function, defined in `grip/browser.py`, waits until a local server starts listening on a given host and port. It repeatedly checks using `is_server_running`, sleeping for 0.1 sec...",
+      "generated_answer": "---\nid: 2\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/templates/limit.html\nlang: Html\ncreated: 2025-08-09T15:15:00.535027\nauthors: \nscores: [2.8968451023101807]\n---\nThis Java...",
+      "success": true,
+      "similarity_score": 0.011603375527426161,
+      "keyword_overlap": 0.04712041884816754,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9349474906921387
+    },
+    {
+      "question": "which file import `browser.py`?",
+      "category": "general",
+      "difficulty": "easy",
+      "expected_answer": "The file `grip/app.py` imports `browser.py`.\n\nreference:\n```python:grip/app.py\nfrom .browser import start_browser_when_ready\n```",
+      "generated_answer": "---\nid: 70\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/app.py\nlang: Python\ncreated: 2025-08-09T15:15:00.535068\nauthors: \nscores: [2.278588056564331]\n---\nThe `_redirect_to_sub...",
+      "success": true,
+      "similarity_score": 0.01152482269503546,
+      "keyword_overlap": 0.013761467889908258,
+      "quality_score": 0.7,
+      "retrieval_time": 1.935060977935791
+    },
+    {
+      "question": "what are the `SUPPORTED_EXTENSIONS` and where are they defined?",
+      "category": "general",
+      "difficulty": "easy",
+      "expected_answer": "The `SUPPORTED_EXTENSIONS` is a list of supported file extensions for the Grip application. It is defined in `grip/constants.py`.\n\nreference:\n```python:grip/constants.py\nSUPPORTED_EXTENSIONS = ['.md',...",
+      "generated_answer": "No snippets found\n",
+      "success": true,
+      "similarity_score": 0.10212765957446808,
+      "keyword_overlap": 0.0,
+      "quality_score": 0.0,
+      "retrieval_time": 1.9468708038330078
+    },
+    {
+      "question": "what is ReadmeNotFoundError exception? Please give a usage example.",
+      "category": "general",
+      "difficulty": "easy",
+      "expected_answer": "An error, defined in `grip/exceptions.py`, that is raised when the specified Readme could not be found.\nIt is a subclass of `NotFoundError`.\n\nAn example usage can be found in `readers.py` in the `read...",
+      "generated_answer": "---\nid: 105\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/browser.py\nlang: Python\ncreated: 2025-08-09T15:15:00.535088\nauthors: \nscores: [1.5256333351135254, 1.3832976818084717]...",
+      "success": true,
+      "similarity_score": 0.01941370607649,
+      "keyword_overlap": 0.05217391304347826,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9330689907073975
+    },
+    {
+      "question": "`DirectoryReader` - please explain the purpose of the class.",
+      "category": "function",
+      "difficulty": "easy",
+      "expected_answer": "The `DirectoryReader` class, defined in `grip/readers.py`, is a subclass of `ReadmeReader` that reads README files from a directory. It locates a README file, normalizes paths, and provides methods to...",
+      "generated_answer": "---\nid: 63\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/api.py\nlang: Python\ncreated: 2025-08-09T15:15:00.535064\nauthors: \nscores: [1.2877230644226074]\n---\nThe code defines a f...",
+      "success": true,
+      "similarity_score": 0.008326587255695617,
+      "keyword_overlap": 0.03461538461538462,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9179201126098633
+    },
+    {
+      "question": "How does Grip handle the rendering of GitHub-style task lists with nested items, and what HTML structure does it generate? \nPlease provide an example of the Markdown input and corresponding HTML output.",
+      "category": "general",
+      "difficulty": "hard",
+      "expected_answer": "Let me explain how Grip handles GitHub-style task lists by analyzing the test files and HTML output structure:\n\nThe input Markdown for nested task lists looks like this:\n\n```markdown\n- [ ] a bigger pr...",
+      "generated_answer": "---\nid: 11\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/templates/limit.html\nlang: Html\ncreated: 2025-08-09T15:15:00.535033\nauthors: \nscores: [0.7182213068008423]\n---\nThis com...",
+      "success": true,
+      "similarity_score": 0.03241841365895829,
+      "keyword_overlap": 0.036231884057971016,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9155027866363525
+    },
+    {
+      "question": "How does Grip handle GitHub API authentication for rate limiting, and what happens when invalid credentials are provided? Please explain the authentication flow and error handling.",
+      "category": "general",
+      "difficulty": "hard",
+      "expected_answer": "Based on the codebase, particularly the test mocks implementation, here's how Grip handles GitHub API authentication:\n\nWhen making requests to GitHub's API, Grip uses HTTP Basic Authentication with th...",
+      "generated_answer": "---\nid: 5\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/templates/limit.html\nlang: Html\ncreated: 2025-08-09T15:15:00.535030\nauthors: \nscores: [0.7101871967315674, 0.82012873888...",
+      "success": true,
+      "similarity_score": 0.02582409235910679,
+      "keyword_overlap": 0.08996539792387544,
+      "quality_score": 0.7,
+      "retrieval_time": 1.9322147369384766
+    },
+    {
+      "question": "How does Grip handle syntax highlighting for different programming languages in markdown code blocks, and what happens when an unmatched language is specified? Explain the rendering process with examples.",
+      "category": "general",
+      "difficulty": "hard",
+      "expected_answer": "Looking at the test files and HTML output, here's how Grip handles code block syntax highlighting:\n\nWhen processing a markdown code block, Grip generates different HTML structures based on the languag...",
+      "generated_answer": "---\nid: 11\nsource: file:///home/a.subramanian/Downloads/grip-no-tests\npath: grip/templates/limit.html\nlang: Html\ncreated: 2025-08-09T15:15:00.535033\nauthors: \nscores: [0.7182213068008423]\n---\nThis com...",
+      "success": true,
+      "similarity_score": 0.030690537084398978,
+      "keyword_overlap": 0.05970149253731343,
+      "quality_score": 0.7,
+      "retrieval_time": 1.950500249862671
+    }
+  ]
+}
